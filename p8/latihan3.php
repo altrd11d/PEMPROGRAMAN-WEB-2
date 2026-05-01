@@ -8,9 +8,8 @@ function repeat($text, $num = 5) {
 }
 
 // calling repeat with two arguments
-repeat("HEYYY ANTEK-ANTEK ASEENG", 100);
+repeat("HEYYY KAWAN", 100);
 
 // calling repeat with just one argument
 repeat("You're the man");
-// Project 8.3 By ASEP SURYA AGUSTIN - 221011450392
 ?>
