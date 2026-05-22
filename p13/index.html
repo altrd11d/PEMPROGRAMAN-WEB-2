@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Mahasiswa</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 500px;
+            background: #fff;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .container h2{
+            text-align: center;
+            margin-bottom: 25px;
+            color: #1e3c72;
+        }
+
+        .form-group{
+            margin-bottom: 18px;
+        }
+
+        .form-group label{
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-control{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .form-control:focus{
+            border-color: #2a5298;
+            outline: none;
+            box-shadow: 0 0 8px rgba(42,82,152,0.4);
+        }
+
+        .button-group{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .btn{
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-submit{
+            background: #2a5298;
+            color: white;
+        }
+
+        .btn-submit:hover{
+            background: #1e3c72;
+        }
+
+        .btn-cancel{
+            background: #ccc;
+            color: black;
+        }
+
+        .btn-cancel:hover{
+            background: #999;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Form Input Data Mahasiswa</h2>
+
+        <form action="" method="post">
+
+            <div class="form-group">
+                <label>ID Mahasiswa / NIM</label>
+                <input type="text" class="form-control" placeholder="Masukkan NIM">
+            </div>
+
+            <div class="form-group">
+                <label>Nama</label>
+                <input type="text" class="form-control" placeholder="Masukkan Nama">
+            </div>
+
+            <div class="form-group">
+                <label>Jurusan</label>
+                <select class="form-control">
+                    <option>- Pilih Jurusan -</option>
+                    <option>Teknik Informatika</option>
+                    <option>Sistem Informasi</option>
+                    <option>Manajemen Informatika</option>
+                    <option>Teknik Komputer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Alamat</label>
+                <textarea class="form-control" rows="3" placeholder="Masukkan Alamat"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>No. Telp</label>
+                <input type="text" class="form-control" placeholder="Masukkan Nomor Telepon">
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-submit">Submit</button>
+                <button type="reset" class="btn btn-cancel">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
